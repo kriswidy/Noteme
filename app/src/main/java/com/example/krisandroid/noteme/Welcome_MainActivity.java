@@ -24,10 +24,21 @@ public class Welcome_MainActivity extends AppCompatActivity {
 //    @BindView(R.id.btn_login) Button _loginButton;
 //    @BindView(R.id.link_signup) TextView _signupLink;
 
+    Button _loginButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome__main);
+
+        _loginButton = (Button)findViewById(R.id.btn_login);
+        _loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Welcome_MainActivity.this , MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
 //        ButterKnife.bind(this);
 //        _loginButton.setOnClickListener(new View.OnClickListener() {
