@@ -32,13 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setContent_Note();
         initRecyclerview_Note();
 
-
-
-
-
-
-
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 //
@@ -96,8 +89,14 @@ public class MainActivity extends AppCompatActivity {
                 mIntent = new Intent(this, AboutActivity.class);
                 startActivity(mIntent);
                 return true;
+//            case R.id.action_logout:
+//                mIntent = new Intent(this, Welcome_MainActivity.class);
+//                startActivity(mIntent);
+//                return true;
+
+            //hanya cek update,, yang bener noh di atas
             case R.id.action_logout:
-                mIntent = new Intent(this, Welcome_MainActivity.class);
+                mIntent = new Intent(this, UpdateActivity.class);
                 startActivity(mIntent);
                 return true;
             default:
