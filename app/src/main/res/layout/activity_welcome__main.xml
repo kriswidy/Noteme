@@ -36,12 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="8dp">
-<<<<<<< HEAD
             <EditText
                 android:id="@+id/input_email"
-=======
-            <EditText android:id="@+id/input_email"
->>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"

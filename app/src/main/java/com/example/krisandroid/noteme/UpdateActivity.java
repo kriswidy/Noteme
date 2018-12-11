@@ -31,17 +31,7 @@ public class UpdateActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent mIntent;
         switch (item.getItemId()) {
-<<<<<<< HEAD
             case R.id.btnSave:
-=======
-            case R.id.openAllnote:
-                mIntent = new Intent(this, MainActivity.class);
-                startActivity(mIntent);
-                return true;
-            case R.id.deleteNote:
-
-                //ngoding hapus
->>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
                 mIntent = new Intent(this, MainActivity.class);
                 startActivity(mIntent);
                 return true;

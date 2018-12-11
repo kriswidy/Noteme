@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.krisandroid.noteme.MainActivity">
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,21 +32,5 @@
         tools:ignore="NotSibling">
 
     </android.support.v7.widget.RecyclerView>
-
-
-    <!--<GridView-->
-        <!--android:id="@+id/gridview_android_example"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="305dp"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:layout_marginStart="0dp"-->
-        <!--android:layout_marginTop="58dp"-->
-        <!--android:columnWidth="100dp"-->
-        <!--android:gravity="center"-->
-        <!--android:minHeight="90dp"-->
-        <!--android:numColumns="auto_fit"-->
-        <!--android:stretchMode="columnWidth" />-->
 
 </RelativeLayout>
