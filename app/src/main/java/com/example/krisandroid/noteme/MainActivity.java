@@ -9,7 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.krisandroid.noteme.Adapter.NotemeAdapter;
 import com.example.krisandroid.noteme.Models.Note;
@@ -55,24 +57,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-//    private void setContent_Note(){
-//        NoteContent_Model nt = new NoteContent_Model("Cintaku","12/03/2018");
-//        mNote.add(nt);
-//        nt = new NoteContent_Model("Cintaku","12/03/2018");
-//        mNote.add(nt);
-//        nt = new NoteContent_Model("Cintaku","12/03/2018");
-//        mNote.add(nt);
-//        nt = new NoteContent_Model("Cintaku","12/03/2018");
-//        mNote.add(nt);
-//        nt = new NoteContent_Model("Cintaku","12/03/2018");
-//        mNote.add(nt);
-//        nt = new NoteContent_Model("Cintaku","12/03/2018");
-//        mNote.add(nt);
-//        nt = new NoteContent_Model("Cintaku","12/03/2018");
-//        mNote.add(nt);
-//
-//    }
-
     private void loadData(){
         ApiInterface mApiInterface = ApiClient.getClient().create(ApiInterface.class);
         Call<NoteResponse> noteAmbil = mApiInterface.tampilNote(id_user);
@@ -99,35 +83,52 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewMain.setLayoutManager(layoutmanager);
     }
 
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.navigation, menu);
-        return super.onCreateOptionsMenu(menu); }
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.navigation, menu);
+        return true;
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent mIntent;
-        switch (item.getItemId()) {
-            case R.id.action_add:
-                mIntent = new Intent(this, AddMainActivity.class);
-                mIntent.putExtra("id_user",id_user);
-                startActivity(mIntent);
-                return true;
-            case R.id.action_about:
-                mIntent = new Intent(this, AboutActivity.class);
-                startActivity(mIntent);
-                return true;
-//            case R.id.action_logout:
+        if (item.getItemId()==R.id.newNote){
+            mIntent = new Intent(this, AddMainActivity.class);
+            mIntent.putExtra("id_user", id_user);
+            startActivity(mIntent);
+            return true;
+        }else if (item.getItemId()==R.id.actionAbout){
+            mIntent = new Intent(this, AboutActivity.class);
+            startActivity(mIntent);
+            return true;
+        }else if (item.getItemId()==R.id.actionLogout){
+            Toast.makeText(MainActivity.this, "On Build!", Toast.LENGTH_LONG).show();
+        }
+            return  super.onOptionsItemSelected(item);
+
+//        switch (item.getItemId()) {
+//            case R.id.newNote:
+//                mIntent = new Intent(this, AddMainActivity.class);
+//                mIntent.putExtra("id_user",id_user);
+//                startActivity(mIntent);
+//                return true;
+//            case R.id.actionAbout:
+//                mIntent = new Intent(this, AboutActivity.class);
+//                startActivity(mIntent);
+//                return true;
+//            case R.id.actionLogout:
 //                mIntent = new Intent(this, Welcome_MainActivity.class);
 //                startActivity(mIntent);
 //                return true;
-
-            //hanya cek update,, yang bener noh di atas
-            case R.id.action_logout:
-                mIntent = new Intent(this, UpdateActivity.class);
-                startActivity(mIntent);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+////            //hanya cek update,, yang bener noh di atas
+////            case R.id.action_logout:
+////                mIntent = new Intent(this, UpdateActivity.class);
+////                startActivity(mIntent);
+////                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
     }
 
 }

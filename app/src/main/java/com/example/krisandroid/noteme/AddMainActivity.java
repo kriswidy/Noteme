@@ -9,12 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import com.example.krisandroid.noteme.Models.AddNoteResponse;
-import com.example.krisandroid.noteme.Rest.ApiClient;
-import com.example.krisandroid.noteme.Rest.ApiInterface;
-
-import retrofit2.Call;
-
 public class AddMainActivity extends AppCompatActivity {
     EditText edJudul, edNote;
 
@@ -32,7 +26,7 @@ public class AddMainActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.allnote_bar, menu);
+        getMenuInflater().inflate(R.menu.updatenote_bar, menu);
         return super.onCreateOptionsMenu(menu); }
     @Override
 
