@@ -7,6 +7,10 @@
     tools:context="com.example.krisandroid.noteme.MainActivity">
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

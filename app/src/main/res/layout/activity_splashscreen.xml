@@ -24,7 +24,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="98dp"
         android:fontFamily="sans-serif-smallcaps"
+<<<<<<< HEAD
         android:text="noteme"
+=======
+        android:text="Noteme"
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
         android:textAlignment="center"
         android:textSize="30sp" />
 
@@ -36,6 +40,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"/>
 
+<<<<<<< HEAD
     <!--<ProgressBar-->
         <!--android:id="@+id/progressBar1"-->
         <!--style="?android:attr/progressBarStyleHorizontal"-->
@@ -45,5 +50,7 @@
         <!--android:layout_alignParentBottom="true"-->
         <!--android:layout_centerHorizontal="true" />-->
 
+=======
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
 </RelativeLayout>
 

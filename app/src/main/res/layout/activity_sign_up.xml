@@ -16,12 +16,21 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
 
+<<<<<<< HEAD
         <!--<android.support.v7.widget.Toolbar-->
             <!--android:id="@+id/toolbarLogin"-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="?attr/actionBarSize"-->
             <!--app:navigationIcon="?attr/homeAsUpIndicator"-->
             <!--android:layout_marginTop="1dp"/>-->
+=======
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarLogin"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            android:layout_marginTop="1dp"/>
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
 
         <TextView
             android:layout_width="match_parent"
@@ -29,7 +38,11 @@
             android:text="Noteme"
             android:textAlignment="center"
             android:textSize="30sp"
+<<<<<<< HEAD
             android:layout_marginTop="50dp"
+=======
+            android:layout_marginTop="10dp"
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
             android:textStyle="bold"/>
 
         <!--  Name Label -->
@@ -64,8 +77,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
+<<<<<<< HEAD
             <EditText
                 android:id="@+id/input_password"
+=======
+            <EditText android:id="@+id/input_password"
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"

@@ -3,11 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+<<<<<<< HEAD
         android:id="@+id/btnSave"
         android:enabled="true"
         android:icon="@android:drawable/ic_menu_save"
+=======
+        android:id="@+id/openAllnote"
+        android:enabled="true"
+        android:icon="@drawable/order"
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
         android:title="Item"
         android:visible="true"
         app:showAsAction="always" />
 
+<<<<<<< HEAD
+=======
+    <item
+        android:id="@+id/deleteNote"
+        android:enabled="true"
+        android:icon="@drawable/bin"
+        android:title="Item"
+        android:visible="true"
+        app:showAsAction="always" />
+
+
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
 </menu>

@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Enterprise_NoteMe.iml" filepath="$PROJECT_DIR$/Enterprise_NoteMe.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Noteme2.iml" filepath="$PROJECT_DIR$/Noteme2.iml" />
+=======
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

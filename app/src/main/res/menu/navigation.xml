@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -17,4 +18,20 @@
         android:title="Logout"
         app:showAsAction="never"/>
     
+=======
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.ayodolen.MainActivity">
+    <item
+        android:id="@+id/action_add"
+        android:title="Add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:title="About" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"/>
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
 </menu>

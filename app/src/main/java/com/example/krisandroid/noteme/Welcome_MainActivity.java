@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.example.krisandroid.noteme.Models.User;
 import com.example.krisandroid.noteme.Models.UserResponse;
 import com.example.krisandroid.noteme.Rest.ApiClient;
@@ -21,6 +22,10 @@ import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+=======
+import butterknife.BindView;
+import butterknife.ButterKnife;
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
 
 public class Welcome_MainActivity extends AppCompatActivity {
 
@@ -31,14 +36,19 @@ public class Welcome_MainActivity extends AppCompatActivity {
 //    @BindView(R.id.input_password) EditText _passwordText;
 //    @BindView(R.id.btn_login) Button _loginButton;
 //    @BindView(R.id.link_signup) TextView _signupLink;
+<<<<<<< HEAD
     EditText edEmail,edPassword;
     TextView tvRegister;
+=======
+
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
     Button _loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome__main);
+<<<<<<< HEAD
         edEmail = (EditText) findViewById(R.id.input_email);
         edPassword = (EditText) findViewById(R.id.input_password);
         tvRegister = (TextView) findViewById(R.id.link_signup);
@@ -82,6 +92,18 @@ public class Welcome_MainActivity extends AppCompatActivity {
 
 
 
+=======
+
+        _loginButton = (Button)findViewById(R.id.btn_login);
+        _loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Welcome_MainActivity.this , MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+>>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
 //        ButterKnife.bind(this);
 //        _loginButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
