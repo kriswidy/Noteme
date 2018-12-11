@@ -2,11 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.krisandroid.noteme">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET"/>
 
-=======
->>>>>>> 60f1a7d2c8e0dbe4ac359ab9b2ad87ce1b8a5493
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

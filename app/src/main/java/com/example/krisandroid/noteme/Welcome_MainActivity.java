@@ -72,3 +72,4 @@ public class Welcome_MainActivity extends AppCompatActivity {
             }
         });
 }
+}
