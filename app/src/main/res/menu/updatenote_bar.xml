@@ -3,10 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/btnSave"
+        android:id="@+id/btnUpdate"
         android:enabled="true"
         android:icon="@android:drawable/ic_menu_save"
         android:title="Item"
         android:visible="true"
         app:showAsAction="always" />
+
+    <item
+        android:id="@+id/btnDelete"
+        android:enabled="true"
+        android:icon="@drawable/bin"
+        android:title="Item"
+        android:visible="true"
+        app:showAsAction="always" />
+
 </menu>

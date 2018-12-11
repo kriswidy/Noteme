@@ -59,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadData();
+    }
+
     private void loadData(){
         ApiInterface mApiInterface = ApiClient.getClient().create(ApiInterface.class);
         Call<NoteResponse> noteAmbil = mApiInterface.tampilNote(id_user);

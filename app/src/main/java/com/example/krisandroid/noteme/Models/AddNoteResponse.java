@@ -9,8 +9,18 @@ import java.util.List;
  */
 
 public class AddNoteResponse {
+    @SerializedName("status")
+    String status;
     @SerializedName("result")
     List<AddNote> listNote;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public List<AddNote> getListNote() {
         return listNote;
